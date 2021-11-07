@@ -12,28 +12,37 @@
 		<link rel="stylesheet" href="css/style.css">
 	</head>
 	<body>
-		<form>
+		<form id='orderForm'  style='background-color:lightslategrey'>
 			<h1>The Amazing Bakery</h1>
 
 			<h3>Please select your order date</h3>
 			<input id='date' type="date" value="2021-11-08">
 
+			<div id='brownieDiv' style='background-color:skyblue'>
+				<h4 id='brownieImage'>Brownie</h4>
 
-			<p>Brownie</p>
-			<input id='brownie' name='brownie' type="number" step='1' min='0'>
-
-			<p>Key Lime Cheesecake</p>
-			<input id='keyLimeCheesecake' name='keyLimeCheesecake' type="number" step='1' min='0'>
-
-			<p>Cookie</p>
-			<input id='cookie' name='cookie' type="number" step='1' min='0'>
-
-			<p>Mini Gingerbread Donut</p>
-			<input id='miniGingerbreadDonut' name='miniGingerbreadDonut' type="number" step='1' min='0'>
+				<input id='brownie' name='brownie' type="number" step='1' min='0'>
+				<p>Brownie's are $2.00 each or 4 for $7.00</p>
+			</div>
+			<div id='keyLimeCheesecakeDiv' style='background-color:skyblue'>
+				<h4>Key Lime Cheesecake</h4>
+				<input id='keyLimeCheesecake' name='keyLimeCheesecake' type="number" step='1' min='0'>
+				<p>Cheesecake's are $8.00 each, On October 1st they are 25% OFF</p>
+			</div>
+			<div id='cookieDiv' style='background-color:skyblue'>
+				<h4>Cookie</h4>
+				<input id='cookie' name='cookie' type="number" step='1' min='0'>
+				<p>Cookie's are $1.25 each or 6 for $6.00, Except on Fridays they are 8 for $6.00</p>
+			</div>
+			<div id='miniGingerbreadDonutDiv' style='background-color:skyblue'>
+				<h4>Mini Gingerbread Donut</h4>
+				<input id='miniGingerbreadDonut' name='miniGingerbreadDonut' type="number" step='1' min='0'>
+				<p>Mini Gingerbread Donut's are $0.50 each, On Tuesdays they are 2 for 1</p>
+			</div>
 			<!-- CSS should remove this line break later when i do styling -->
 			<br>
 			<button id='submit' type='submit'>SUBMIT ORDER</button>
-			<button>Reset Form</button>
+			<button id='reset' type='reset'>Reset Form</button>
 		</form>
 		<p>Please click SUBMIT ORDER to fulfill your oder and receive your total amount</p>
 		<p>Click Reset Form to clear the form</p>

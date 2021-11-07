@@ -6,17 +6,20 @@
                 //multiply prices
                     //Normal vs Sale prices
                 // Render total
+            // Learn how to create a Docker file.
+            // https://docs.docker.com/get-started/
 // Then I created below code....
+
 
 
 // START DATE STUFF
 
-let saleDate = ''                                           // Needs to be one of four 'tuesday', 'friday', 'octiober1', ''
+let saleDate = ''       // Needs to be one of four 'tuesday', 'friday', 'octiober1', ''
 let saleDayValue = ''
 let saleMonthValue = ''
 let saleDateValue = ''
 
-// START DATE STUFF
+// START DATE STUFFd
 // START Prevent BACK ORDERS
 let today = new Date();
 let dd = today.getDate();
@@ -36,10 +39,11 @@ document.getElementById("date").setAttribute("min", today);
 
 //listener for button
 document.getElementById('submit').addEventListener('click', submitForm)
+document.getElementById('reset').addEventListener('click', resetForm)
 
 // Global Variables
-
-
+                                                                                            // These need to be
+                                                                                            // localStorage.setItem
 let brownieFormInput = 0 
 let keyLimeCheesecakeFormInput = 0
 let cookieFormInput = 0
@@ -115,6 +119,17 @@ function getTotal(){
     document.getElementById('total').innerHTML = formatter.format(total)
 }
 
+// START RESET FORM
+function resetForm(){
+
+                                                                                            // should be localStorage.setItem()
+                                                                                            // that need to be set to ZEROS
+    // document.getElementById("orderForm").reset()                                         // NOT WORKING
+}
+
+
+// END RESET FORM
+
 function brownie(){
     let total = 0
     let count = brownieFormInput                          //Should be pulled in from FORM                              OPTIMIZE ME
@@ -129,6 +144,13 @@ function brownie(){
     const bulkValues = Object.values(treatData[4][1])                                                                 //Could be OPTOMIZED
     const bulkAmount = bulkValues[0]
     const bulkPrice = bulkValues[1]
+
+    //Add Image                                                                             // Not Working need to fix
+                                                                                            // Should be moved to Global
+                                                                                            // Outside of the function
+    // document.getElementById('brownieDiv').appendChild(image)
+    // console.log(treatData[2][1])
+
 
     // Create Bulk Total
     bulkCount = Math.trunc(count / bulkAmount)

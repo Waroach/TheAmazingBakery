@@ -4,7 +4,7 @@
 
 [![release](https://img.shields.io/badge/release-v0.0-red.svg?style=flat-square)]()
 
-This is a basic blank README for new projects.
+This is version 0.0 Made using Vanilla JavaScript
 
 ## Development
 
@@ -13,30 +13,31 @@ This is a basic blank README for new projects.
 - Website: ([COMPANY WEBSITE](#))
 - Developer: [BRENT RANKIN]
 
-Server information:
+Site information:
 
-    NS1
-    NS2
-    IP: [ADDRESS]
-
-Global DNS:
+    I set aside 3 hours to do this.
+    2 hours was supposed to be Javascript.
+    3rd hour was to learn how to set up a docker --- https://docs.docker.com/get-started/
+    At the end of the 2nd hour I had a bug that was not allowing the sale function to run.
+    Took my an hour to fix bug and change how the sales ran. -- They are now apart of each item it belongs to.
 
 - [Open With Live Server]
 
 ## Features
 
-- [FEATURE 1]
-- [FEATURE 2]
-- [FEATURE 3]
+- [Dates are added for Sales] They are all offset by -1 i.e. they start with 0
+- [FEATURE 1] you can use days of weeks i.e 0-6 represents Monday-Sunday
+- [FEATURE 2] you can use the month i.e. 0-11 represents Jan-Dec
+- [FEATURE 3] you can use the date of month i.e. 0-30 represents 01-31
 
 ## Content management system
 
-- [CMS NAME]
+- [CMS NAME] - NONE
 
 ## Deployment
 
 - GIT/FTP
-  - release -> live
+  - release -> live Server Only
 
 ## Contribute or Support
 
