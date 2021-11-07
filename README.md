@@ -45,4 +45,4 @@ If you are having issues, please email the webmaster [BRENT RANKIN](mailto:brent
 
 ## License
 
-[![License: CC BY 4.0](https://licensebuttons.net/l/by/4.0/80x15.png)](http://creativecommons.org/licenses/by/4.0/)
+[![License: CC BY Brent Rankin 4.0](https://licensebuttons.net/l/by/4.0/80x15.png)](http://creativecommons.org/licenses/by/4.0/)
