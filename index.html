@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+    	<meta charset="utf-8">
+    	<meta name="description" content="This is where your description goes">
+    	<meta name="keywords" content="one, two, three">
+
+		<title>Title in the tab</title>
+
+		<!-- external CSS link -->
+		<link rel="stylesheet" href="css/normalize.css">
+		<link rel="stylesheet" href="css/style.css">
+	</head>
+	<body>
+		<form>
+			<h1>The Amazing Bakery</h1>
+
+			<h3>Please select your order date</h3>
+			<input id='date' type="date" value="2021-11-08">
+
+
+			<p>Brownie</p>
+			<input id='brownie' name='brownie' type="number" step='1' min='0'>
+
+			<p>Key Lime Cheesecake</p>
+			<input id='keyLimeCheesecake' name='keyLimeCheesecake' type="number" step='1' min='0'>
+
+			<p>Cookie</p>
+			<input id='cookie' name='cookie' type="number" step='1' min='0'>
+
+			<p>Mini Gingerbread Donut</p>
+			<input id='miniGingerbreadDonut' name='miniGingerbreadDonut' type="number" step='1' min='0'>
+			<!-- CSS should remove this line break later when i do styling -->
+			<br>
+			<button id='submit' type='submit'>SUBMIT ORDER</button>
+			<button>Reset Form</button>
+		</form>
+		<p>Please click SUBMIT ORDER to fulfill your oder and receive your total amount</p>
+		<p>Click Reset Form to clear the form</p>
+
+		<h2 id='total'>$0.00</h2>
+
+
+		<script type="text/javascript" src="js/bakery_problem_data.js"></script>
+		<script type="text/javascript" src="js/main.js"></script>
+	</body>
+</html>
